@@ -1,0 +1,62 @@
+.phone 
+  width: 65px
+  height: 65px
+  background-color: #0b9e03
+  position: fixed
+  bottom: 40
+  right: 7
+  border-radius: 40px
+  z-index: 10
+  display: flex 
+  justify-content: center
+  align-items: center
+  animation: shadow 1s ease infinite
+@keyframes shadow 
+  0%  
+    box-shadow: 0 0 0 0 rgba(11,158,3, .8)
+  100%  
+    box-shadow: 0 0 0 20px rgba(11,158,3, 0)
+ 
+.header
+  padding: 15px 0px
+  &-logo
+    display: flex
+    align-items: center
+
+    div 
+      background-color: $active-color
+      padding: 2px 10px
+      border-radius: 9px  
+      font-size: 23px
+      font-weight: 600
+      color: $text-color-lite
+      .sec 
+        margin-top: -20px
+    background-size: 100%
+    width: 191px
+    height: 61px
+
+  &-contacts
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    &__button
+       
+    &__phone
+      a  
+        color: $text-color-dark
+      &s 
+        display: flex
+      font-size: 22px
+      font-weight: 500
+      line-height: 22px
+      color: $text-color-dark
+      text-transform: uppercase
+      vertical-align: middle
+      margin-right: 13px
+
+      &:first-child
+        border-right: 1px solid grey
+        padding-right: 10px
+
+
